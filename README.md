@@ -1,3 +1,7 @@
+# Big Easy Savings website design
+Grid column and row menu navigation in an Astrojs using Tailwind css. Babylonjs just above footer section to view 3D models.
+Will be implemented on this website in near future after some testing and upgrades to Astro 4
+
 # Astro Starter Kit: Minimal
 
 ```
