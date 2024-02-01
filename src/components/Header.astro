@@ -1,0 +1,86 @@
+---
+
+//Import Image Assets and CSS
+import '../styles/headerstyle.css';
+import { Image } from 'astro:assets';
+
+//Rocks Spewing
+import lavaRock from '../assets/main/lava-rock3.png';
+import marbleRock from '../assets/main/marble-rock.png';
+import blackRock from '../assets/main/black-rock2.png';
+
+//Buttons, Logo, and Links
+import designEvents from '../assets/main/design_events.png';
+import aboutBes from '../assets/main/about_bes.png';
+import contactUs from '../assets/main/contact_us.png';
+import redDragon from '../assets/main/RedDragon.jpg';
+import digitalArts from '../assets/main/digital_arts.png';
+import innovative from '../assets/main/innovative_designs.png';
+import printed from '../assets/main/printed_perfections.png';
+const bwSmall = 130;
+const bwLarge = 190;
+const logoSize = 160;
+const rockSize = 35;
+
+--- 
+
+<header id="header-content"> 
+    <div class="grid-container">
+
+        <div class="i1">
+            <h1 class="brand">Innovative Designs, Printed to Perfection</h1>
+        </div>
+
+        <div class="i2">
+            <h2 class="tagline">Transforming Digitial Art into Tangible Beauty</h2>
+        </div>
+
+        <div class="i3">
+            <h3 class="logo">Fierced Horns Fury Dragon</h3>
+            <a href="/"><Image src={redDragon} width ={logoSize} alt="Golden Horned Red Dragon" /></a>
+        </div>
+        
+        <div class="i4 link-container">
+            <picture class="link-row">
+                <a href="/about"><Image src={aboutBes} width={bwSmall} alt="About Big Easy Savings" /></a>
+                <Image src={blackRock} width={rockSize} alt="Black Rock spewing from a volcano" />
+            </picture>
+        </div>
+        
+        <div class="i5 link-container">
+            <picture class="link-row">
+                <a href="/contact"><Image src={contactUs} width={bwSmall} alt="Contact Big Easy Savings" /></a>
+                <Image src={lavaRock} width={rockSize} alt="Lava Rock spewing from a volcano" />
+            </picture>
+        </div>
+        
+        <div class="i6 link-container">
+            <picture class="link-row">
+                <a href="/events"><Image src={designEvents} width={bwLarge} alt="Menu button for Design Events" /></a>
+                <Image src={marbleRock} width={rockSize} alt="Marble Rock spewing from a volcano" />
+            </picture>
+        </div>
+        
+        
+            <div class="i7 link-container">
+                <picture class="link-row">
+                    <a href="/arts"><Image src={digitalArts} width={bwLarge} alt="Menu button for Digital Arts" /></a>
+                    <Image src={lavaRock} width={rockSize} alt="Lava Rock spewing from a volcano" />
+                </picture>
+            </div>
+        
+            <div class="i8 link-container">
+                <div class="link-row">
+                    <a href="/printed"><Image src={printed} width={bwLarge} alt="Menu button for Printed Perfections" /></a>
+                    <Image src={marbleRock} width={rockSize} alt="Marble Rock spewing from a volcano" />
+                </div>
+            </div>
+        
+            <div class="i9 link-container">
+                <div class="link-row">
+                    <a href="/designs"><Image src={innovative} width={bwLarge} alt="Menu button for Innovative Designs" /></a>
+                    <Image src={blackRock} width={rockSize} alt="Black Rock spewing from a volcano" />
+                </div>
+            </div>
+    </div>
+</header>

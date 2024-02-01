@@ -1,0 +1,29 @@
+
+  
+/* Footer with Flexbox Layout */
+
+.footer >*{
+    display: inline-flex;
+    flex-direction: column;
+    min-height: 200px;
+  }
+  /* Begin Footer Container */
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./artwork/cracked-dirt.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f0e4fd;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: 1em;
+    min-width: 728px;
+    max-width: 1440px;
+  }
+  /* End of Footer Container */

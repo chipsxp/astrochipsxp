@@ -1,0 +1,111 @@
+    
+    
+    /* Header Content Starts Here */
+
+    /* Brand Description */
+    .i1 .brand{ 
+    grid-area: brand;
+    color: #2142ac;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.60em;
+    margin: 10px auto;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(243, 234, 171);
+    }
+
+    /* Tagline Description */
+    .i2 .tagline{ 
+    grid-area: tagline;
+    color: #832cda;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.40em;
+    font-weight: 700;
+    margin: 10px auto;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(243, 234, 171);
+    }
+
+    /* Big Easy Savings RedDragon logo */
+    .i3 .logo{ 
+    grid-area: logo;
+    color: #f0e4fd;
+    font-size: 1.20em;
+    text-shadow: 2px 2px 2px #832cda;
+    }
+
+    /* About US Menu Button */
+    .i4 {
+    grid-area: about;
+    }
+
+    /* Contact US Menu Button */
+    .i5 { 
+    grid-area: contact;
+    }
+
+    /* lava star explosion under Design Events */
+    .i6 { 
+    grid-area: star;
+    background-image: url("./artwork/lava-star.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+
+    /* Digital Arts Design Button */
+    .i7 { 
+    grid-area: arts;
+    }
+
+    /* Print Design Button */
+    .i8 { 
+    grid-area: printed;
+    }
+    
+    /* Innovative Design Button */
+    .i9 { 
+    grid-area: designs;
+    }
+    
+    /* Spewing Lava Rocks Blocks */
+    .link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    }
+
+    .link-row {
+    flex: 1;
+    flex-direction: row;
+    
+    }  
+    /* end of Spewing Lava Rocks Blocks */
+
+    /* Header Logo Menu Buttons with Grid Area Layout */
+    .grid-container {
+    min-width: 728px;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, minmax(min-content, max-content)); 
+    padding: 1.2rem;
+    column-gap: 20px; 
+    row-gap: 20px;
+    justify-content: flex-start;
+    /* With areas */
+    grid-template-areas:  
+    "brand about arts"
+    "tagline contact printed"
+    "logo star designs";
+
+    /* Spanning areas together as a whole with background image */
+    grid-area: span 3 / span 3;
+    background-image: url("./artwork/volcanopuff.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: #2142ac solid 8px;
+    }
+    /* End of Grid Container */
+    /*End of Header Container */

@@ -1,5 +1,6 @@
+
 {
-  "name": "",
+  "name": "astro-chips",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +11,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.8.3"
+    "@astrojs/mdx": "^0.19.7",
+    "@astrojs/react": "^3.0.3",
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "^18.2.11",
+    "astro": "^2.10.15",
+    "astro-imagetools": "^0.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sharp": "^0.32.6"
+  },
+  "devDependencies": {
+    "@babylonjs/core": "^6.23.0",
+    "@babylonjs/inspector": "^6.23.0"
   }
 }

@@ -1,0 +1,25 @@
+---
+import '../styles/contentstyle.css';
+const {topic} = Astro.props;
+import bigStar from '../assets/renders/Dark_back_big_star_crowd_cheering.png';
+import fireWorks from '../assets/renders/Dark_back_fireworks_crowd_cheering.png';
+import lightRay from '../assets/renders/Dark_back_light_ray_bow_crowd_cheering.png';
+---
+<!-- Main Code: Start -->
+<main>
+    <section id="main-content">
+        <h3 class="topic-main">{topic}</h3>
+        <div class="images-container">
+            <div class="image-column">
+                <img src={bigStar.src} width="100%" height="auto" alt="Dark back with big star crowd cheering" />
+            </div>
+            <div class="image-column">
+                <img src={fireWorks.src} width="100%" height="auto" alt="Dark back with big star crowd cheering" />
+            </div>
+            <div class="image-column">
+                <img src={lightRay.src} width="100%" height="auto" alt="Dark back with big star crowd cheering" />
+            </div>
+        </div>
+    </section>
+    <slot />
+</main> 
